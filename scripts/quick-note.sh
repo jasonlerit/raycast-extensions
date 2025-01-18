@@ -16,8 +16,8 @@
 DATE=$(date +%Y-%m-%d)
 TIME=$(date +'%I:%M %p')
 
-NOTE_FILE="$HOME/Obsidian Vault/00 - Quick Notes/$DATE.md"
-TEMPLATE_FILE="$HOME/Obsidian Vault/03 - Templates/(TEMPLATE) Default.md"
+NOTE_FILE="$HOME/ObsidianVault/00 - Quick Notes/$DATE.md"
+TEMPLATE_FILE="$HOME/ObsidianVault/03 - Templates/(TEMPLATE) Default.md"
 
 if [ ! -f "$NOTE_FILE" ]; then
     if [ ! -f "$TEMPLATE_FILE" ]; then
