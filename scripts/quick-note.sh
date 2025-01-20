@@ -14,6 +14,7 @@
 # @raycast.authorURL https://raycast.com/jason_lerit
 
 DATE=$(date +%Y-%m-%d)
+FORMATTED_DATE=$(date "+%A | %B %d, %Y")
 TIME=$(date +'%I:%M %p')
 
 NOTE_FILE="$HOME/ObsidianVault/00 - Quick Notes/$DATE.md"
@@ -25,7 +26,7 @@ if [ ! -f "$NOTE_FILE" ]; then
         exit 1
     fi
 
-    sed "s/{{date}}/$DATE/g; s/{{time}}/$TIME/g" "$TEMPLATE_FILE" > "$NOTE_FILE"
+    sed "s/{{date}}/$FORMATTED_DATE/g; s/{{time}}/$TIME/g" "$TEMPLATE_FILE" > "$NOTE_FILE"
 fi
 
 /Applications/WezTerm.app/Contents/MacOS/wezterm -e nvim "$NOTE_FILE" &
