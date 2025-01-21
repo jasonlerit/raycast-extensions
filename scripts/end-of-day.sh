@@ -18,7 +18,7 @@ FORMATTED_DATE=$(date "+%A | %B %d, %Y")
 TIME=$(date +'%I:%M %p')
 
 NOTE_FILE="$HOME/ObsidianVault/02 - Work/00 - End of Day/$DATE.md"
-TEMPLATE_FILE="$HOME/ObsidianVault/03 - Templates/(TEMPLATE) End of Day.md"
+TEMPLATE_FILE="$HOME/ObsidianVault/Templates/End of Day.md"
 
 if [ ! -f "$NOTE_FILE" ]; then
     if [ ! -f "$TEMPLATE_FILE" ]; then

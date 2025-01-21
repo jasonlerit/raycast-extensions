@@ -18,7 +18,7 @@ FORMATTED_DATE=$(date "+%A | %B %d, %Y")
 TIME=$(date +'%I:%M %p')
 
 NOTE_FILE="$HOME/ObsidianVault/00 - Quick Notes/$DATE.md"
-TEMPLATE_FILE="$HOME/ObsidianVault/03 - Templates/(TEMPLATE) Quick Note.md"
+TEMPLATE_FILE="$HOME/ObsidianVault/Templates/Quick Note.md"
 
 if [ ! -f "$NOTE_FILE" ]; then
     if [ ! -f "$TEMPLATE_FILE" ]; then
